@@ -1,0 +1,19 @@
+ul {
+    column-count: 5;
+    list-style: none;
+}
+
+li {
+    line-height: 50px;    
+    align-items: center;
+    width: min-content;
+}
+
+img {
+    width: 220px;
+}
+
+span {
+    font-size: 18px;
+    padding-left: 5px;
+}

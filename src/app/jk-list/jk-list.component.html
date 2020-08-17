@@ -1,6 +1,7 @@
-<ul class="list">
-    <li *ngFor="let fruit of listFruits">
-        <span class="badge">id: {{ fruit.id }}, name: {{ fruit.name }}</span>
-        <img src="../../assets/images/fruits.jpg"/>
+<div *ngIf="selectedFruit">
+<ul class="fruits">
+    <li *ngFor="let fruit of fruits">
+        <app-jk-list-item [fruit]="selectedFruit"></app-jk-list-item>
     </li>
 </ul>
+</div>

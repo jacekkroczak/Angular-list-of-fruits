@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { TaskService } from './../task.service';
+// import { TaskService } from './../task.service';
 
-import { fruit } from './../my-list';
+import { Fruit } from '../fruit';
+import { FRUITS } from '../my-list';
 
 @Component({
   selector: 'app-jk-list',
@@ -10,9 +11,10 @@ import { fruit } from './../my-list';
 })
 export class JkListComponent implements OnInit {
 
-  listFruits = fruit;
+  fruits = FRUITS;
+  selectedFruit: Fruit;
 
-  constructor(private taskService: TaskService) { }
+  constructor() { }
 
   ngOnInit(): void {
   }

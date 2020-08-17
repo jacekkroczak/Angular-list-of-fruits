@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Fruit } from '../fruit';
 
 @Component({
   selector: 'app-jk-list-item',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./jk-list-item.component.css']
 })
 export class JkListItemComponent implements OnInit {
+  @Input() fruit: Fruit;
 
   constructor() { }
 

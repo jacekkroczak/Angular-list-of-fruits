@@ -1,7 +1,3 @@
-<div *ngIf="selectedFruit">
 <ul class="fruits">
-    <li *ngFor="let fruit of fruits">
-        <app-jk-list-item [fruit]="selectedFruit"></app-jk-list-item>
-    </li>
+        <app-jk-list-item *ngFor="let fruit of fruits" [fruit]="fruit"></app-jk-list-item>
 </ul>
-</div>

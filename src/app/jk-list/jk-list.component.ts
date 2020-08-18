@@ -12,7 +12,7 @@ import { FRUITS } from '../my-list';
 export class JkListComponent implements OnInit {
 
   fruits = FRUITS;
-  selectedFruit: Fruit;
+  customFruit: Fruit;
 
   constructor() { }
 
@@ -25,4 +25,19 @@ export class JkListComponent implements OnInit {
   //   })
   // }
 
+}
+
+const d = FRUITS;
+
+const c = FRUITS.push([d]);
+
+console.log(c);
+
+// FRUITS.forEach(element => {
+//    this.test = element;
+// });
+
+
+for (let step = 0; step < 100; step++) {
+  console.log('dupa');
 }

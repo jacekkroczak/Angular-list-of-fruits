@@ -1,3 +1,8 @@
 <ul class="fruits">
-        <app-jk-list-item *ngFor="let fruit of fruits" [fruit]="fruit"></app-jk-list-item>
+        <app-jk-list-item
+                *ngFor="let fruit of fruits; index as i"
+                [fruit]="fruit"
+                [index]="i"
+        ></app-jk-list-item>
 </ul>
+      

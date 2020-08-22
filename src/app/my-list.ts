@@ -6,9 +6,9 @@ export const FRUITS: Fruit[] = [
     {  name: 'Cherry' },
     {  name: 'Coconut' },
     {  name: 'Cranberry' },
-    {  name: 'Goji berry' },
+    {  name: 'Strawberry' },
     {  name: 'Lemon' },
     {  name: 'Mango' },
-    {  name: 'Melon' },
+    {  name: 'Watermelon' },
     {  name: 'Yuzu' },
   ];

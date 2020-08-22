@@ -17,6 +17,12 @@ export class JkListComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    const array = FRUITS;
+    for (let step = 0; step < 1000; step++) {
+      const itemFruit = array[Math.floor(Math.random() * array.length)];
+      const newItems = FRUITS.push(itemFruit);
+    }
+    console.log('array', array);
   }
 
   // createNewFruit() {
@@ -24,20 +30,4 @@ export class JkListComponent implements OnInit {
   //     console.log(response);
   //   })
   // }
-
-}
-
-const d = FRUITS;
-
-const c = FRUITS.push([d]);
-
-console.log(c);
-
-// FRUITS.forEach(element => {
-//    this.test = element;
-// });
-
-
-for (let step = 0; step < 100; step++) {
-  console.log('dupa');
 }

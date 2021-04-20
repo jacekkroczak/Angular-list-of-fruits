@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
-import { JkListItemComponent } from './jk-list-item.component';
+import { JkScrollToTopComponent } from './jk-scroll-to-top.component';
 
-describe('JkListItemComponent', () => {
-  let component: JkListItemComponent;
-  let fixture: ComponentFixture<JkListItemComponent>;
+describe('JkScrollToTopComponent', () => {
+  let component: JkScrollToTopComponent;
+  let fixture: ComponentFixture<JkScrollToTopComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ JkListItemComponent ]
+      declarations: [ JkScrollToTopComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(JkListItemComponent);
+    fixture = TestBed.createComponent(JkScrollToTopComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

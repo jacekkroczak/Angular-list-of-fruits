@@ -1,8 +1,20 @@
-<ul class="fruits">
-        <app-jk-list-item
-                *ngFor="let fruit of fruits; index as i"
-                [fruit]="fruit"
-                [index]="i"
-        ></app-jk-list-item>
-</ul>
-      
+<div id="filters">
+        <button class="purpleButton" (click)="_filterFruits($event)" value="filterAZ">A-Z filter</button>
+        <button class="purpleButton" (click)="_filterFruits($event)" value="filterZA">Z-A filter</button>
+        <button class="blueButton" (click)="_filterFruits($event)" value="random">Random fruits</button>
+        <input #search class="greenInput" (keyup)="_searchFruits($event)" placeholder="Type here...">
+        <button class="redButton" (click)="_resetFruits()" value="reset">Reset</button>  
+</div>
+<div id="list">
+        <ul class="list">
+                <app-jk-list-item
+                        *ngFor="let fruit of filterFruits; index as i"
+                        [fruit]="fruit"
+                        [index]="i"
+                ></app-jk-list-item>
+        </ul>
+        <div id="noItems" *ngIf="filterFruits?.length === 0">
+                <p>No records found for the phrases: <strong>{{ search != null ? search.value : '' }}</strong></p>
+        </div>
+</div>
+<app-jk-scroll-to-top></app-jk-scroll-to-top>
